@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="main.js"></script>
+    <title>Input Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+          <div class="logo">
+            <img src="images/logo.svg" alt="" />
+          </div>
+          <div class="image"></div>
+          <div class="text">
+            Start for free & get <br />
+            attractive offers today !
+          </div>
+        </div>
+    <form id="form">
+        <div class="social">
+            <div class="title">Get Started</div>
+            <div class="account">Already have an account?<br/>
+                <span>Sign In</span>
+            </div>   
+        
+             <div class="button">
+                <div class="gbtn">
+                    <img src="https://img.icons8.com/color/48/null/google-logo.png"/>Sign Up </div>
+
+            <div class="fbbtn">
+                    <img src="https://img.icons8.com/ios/50/null/facebook-new.png">Sign Up</div>
+             
+                    
+            <div class="or">Or</div><br/>
+        </div>    
+        </div>
+        <div>
+            <label for="username">User Name</label>
+            <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            required
+            />
+            <div class="error"> </div>
+            <div>
+                <label for="email">Email</label>
+                <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="misc@email.com"
+                required
+                />
+                <div class="error"> </div>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
+                <div class="error"></div>
+              </div>
+              <div>
+                <label for="phone number">Phone Number</label>
+                <input
+                  type="number"
+                  name="number"
+                  id="number"
+                  placeholder="Number"
+                  required
+                />
+                <div class="error"></div>
+              </div>
+              <label><strong> Date of Birth :</strong></label>
+              <input type="date" id="userdob" name="userdob" size="40" required/>
+              <input class="clickhere" type="button" onclick="return checkDob();" value="Confirm"/>
+              <div class="error"></div>
+            <button type="submit" id="submit">Submit</button>
+            
+        </div>
+    </form>
+    </div>
+</body>
+</html>
